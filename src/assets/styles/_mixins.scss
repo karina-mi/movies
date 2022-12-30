@@ -1,0 +1,16 @@
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap, $inline: false) {
+  @if ($inline) {
+    display: inline-flex;
+  } @else {
+    display: flex;
+  }
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+// Transition
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+}

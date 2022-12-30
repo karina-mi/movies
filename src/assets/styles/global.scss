@@ -1,0 +1,29 @@
+@import 'scss-reset/_reset.scss';
+@import 'fonts';
+@import 'helpers';
+
+// Global styles;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: $main;
+  color: $light;
+}
+
+
+.app {
+  @include flex;
+}
+
+.main {
+  width: 55%;
+}
+
+.right-aside, .left-aside {
+    background: $background;
+  height: 100vh;
+  padding: 48px 0 48px 38px;
+}

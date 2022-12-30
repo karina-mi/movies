@@ -1,0 +1,50 @@
+@import 'src/assets/styles/helpers';
+
+.left-aside {
+  width: 20%;
+}
+
+.aside-nav, .aside-nav-item, .aside-nav-item__links {
+  @include flex(column);
+}
+
+.aside-nav {
+  padding-top: 69px;
+  gap: 59px;
+}
+
+.aside-nav-item {
+  &, &__links {
+    gap: 25px;
+  }
+
+  &__title, &__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: rgba($light, .67);
+  }
+
+  &__link {
+    color: $light;
+    text-decoration: none;
+    font-weight: 600;
+    @include flex($align: center);
+    gap: 15px;
+
+    &, svg path, circle {
+      @include transition;
+    }
+
+    &:hover, &.active {
+      color: $primary;
+
+      svg path, circle {
+        stroke: $primary;
+      }
+    }
+  }
+}
