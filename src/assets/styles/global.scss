@@ -16,14 +16,21 @@ body {
 
 .app {
   @include flex;
+  justify-content: space-between;
+  height: 986px;
 }
 
 .main {
-  width: 55%;
+  width: 60%;
 }
 
 .right-aside, .left-aside {
-    background: $background;
-  height: 100vh;
+  height: 100%;
+  background: $background;
   padding: 48px 0 48px 38px;
 }
+
+.page-container {
+  padding: 0 68px;
+}
+

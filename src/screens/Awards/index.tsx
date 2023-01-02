@@ -4,7 +4,7 @@ const Awards: FC = () => {
 
   return (
     <div>
-      <h1>Awards</h1>
+      <h1></h1>
     </div>
   );
 };

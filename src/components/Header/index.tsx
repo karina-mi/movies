@@ -5,6 +5,7 @@ import {CATEGORIES} from "@/routes";
 import {IHeaderProps} from './type';
 
 import './styles.scss';
+import {v4} from "uuid";
 
 const Header: FC<IHeaderProps> = () => {
 
@@ -13,7 +14,7 @@ const Header: FC<IHeaderProps> = () => {
 			<nav className="header-left">
 				{
 					CATEGORIES.map(category => (
-						<NavLink className="header-left__item" to={category.url}>{category.title}</NavLink>
+						<NavLink className="header-left__item" to={category.url} key={v4()}>{category.title}</NavLink>
 					))
 				}
 			</nav>

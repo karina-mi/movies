@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 
 import {IAsideMenuProps} from './type';
 import {NavLink} from "react-router-dom";
+import {v4} from "uuid";
 
 const AsideMenu: FC<IAsideMenuProps> = ({route}) => {
 
@@ -13,7 +14,7 @@ const AsideMenu: FC<IAsideMenuProps> = ({route}) => {
 					route.items.map(link => {
 						const Icon = link.icon;
 						return (
-							<NavLink to={link.url} className="aside-nav-item__link">
+							<NavLink to={link.url} className="aside-nav-item__link" key={v4()}>
 								<Icon/>
 								<span>{link.title}</span>
 							</NavLink>

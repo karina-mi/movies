@@ -124,7 +124,7 @@ const ROUTES: IRoutes[] = [
 export const CATEGORIES: Omit<IRoutesItem, 'icon'>[] = [
 	{
 		title: 'Movies',
-		url: ROUTER_URLS.MOVIES,
+		url: ROUTER_URLS.HOME,
 		component: TvShows
 	},
 	{

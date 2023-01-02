@@ -1,0 +1,68 @@
+@import 'src/assets/styles/helpers';
+
+.popular {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+
+  &__title {
+    margin-top: 60px;
+  }
+}
+
+.popular-items {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  margin-top: 30px;
+
+}
+
+.popular-item {
+  height: 298px;
+  width: 237px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__header {
+    padding: 20px 20px 10px 20px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+  }
+}
+
+.popular-item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: .4;
+}
+
+
+
+.popular-item__info {
+  padding: 10px 10px 0;
+  display: flex;
+  justify-content: end;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgba(249, 249, 249, 0.7);
+}
+
+.popular-item__rating {
+  margin-top: 12px;
+}
+
+.popular-item__action {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}

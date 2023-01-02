@@ -7,8 +7,8 @@
   $this: &;
 
   &--drop, &--small {
-    height: 40px;
-    border-radius: 8px;
+    height: 57px;
+    border-radius: 15px;
 
     #{$this}__text {
       font-size: 14px;
@@ -16,11 +16,11 @@
   }
 
   &--drop {
-    width: 55px;
+    width: 57px;
   }
 
   &--small {
-    width: 125px;
+    width: 150px;
   }
 
   &--large {
